@@ -27,6 +27,7 @@ public class MainActivity extends ActionBarActivity {
     ProgressBar pbar;
     String API = "https://api.github.com";
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -36,6 +37,8 @@ public class MainActivity extends ActionBarActivity {
         edit_user = (EditText) findViewById(R.id.edit);
         pbar = (ProgressBar) findViewById(R.id.pb);
         pbar.setVisibility(View.INVISIBLE);
+
+        // set listener
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
